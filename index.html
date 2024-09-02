@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to my dom</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, nesciunt omnis suscipit 
+            officiis natus, enim laudantium cum id, maxime placeat
+             accusantium hic est voluptatum exercitationem repellendus corrupti sed aliquam esse.</p>
+    </header>
+    <main id="main-container">
+      <section id="jalal" >
+        <h1 class="other fz" id="test">dom de re baba</h1>
+        <ul class="">
+         <li><a href="">jalali set</a></li>
+         <li><a href="">dom de</a></li>
+         <li><a href="">ree baaba</a></li>
+        </ul>
+      </section>
+       <section class="fruit-container">
+       
+        <h1 id="fruits-title" class="sm md lg xl">Fruits I like</h1>
+        <h1 id="fruits-title" class="sm md lg xl">Fruits I like</h1>
+        <ul>
+            <li class="imp-place"><a href="">apple</a></li>
+        <li class="imp-place"><a href="">banana</a></li>
+        <li class="imp-place"><a href="">watermalon</a></li>
+        </ul>
+        
+       </section>
+       <section  id="places-container">
+        <h1 id="places-title">place I like</h1>
+        <ul id="places-list">
+            <li class="imp-place"><a href="">shundorbun</a></li>
+            <li class="imp-place"><a href="">bandorbun</a></li>
+            <li class="imp-place"><a href="">katabon</a></li>
+        </ul>
+       </section>
+       <p title="tahia" class="lklk" >tootip </p>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/dom.js"></script>
+    
+    <script src="js/appeand.js"></script>
+    <script src="js/styleinjs.js"></script>
+    <script>
+        // const student={
+        //     name:'abuol',
+        //     kuch:function(time) {
+        //         console.log(time,'time is money')
+        //     },
+        //     id:11,
+        //     study:function(time) {
+        //         console.log(time,'study kortese')
+        //     }
+        
+        // }
+
+        // option-1
+        // const liCpllect = document.getElementsByTagName('li');
+        // // console.log(liCpllect);
+
+        // for (const li of liCpllect) {
+        //     console.log(li.innerText);
+        // }
+        
+        // const h1Collect = document.getElementsByTagName('h1');
+       
+
+        // for (const h1 of h1Collect) {
+        //     console.log(h1.innerText);
+        // }
+         
+        // option-2
+        // const places = document.getElementsByClassName('imp-place');
+       
+        // for (const place of places) {
+        //     console.log(place.innerText);     
+        // }
+        //    option-3
+        // const fruit = document.getElementById('fruits-title');
+        // console.log(fruit);
+        // fruit.innerText ='I want watermalon changed by js';
+
+          //    option-5:uerySelector
+
+        //    option-5
+        // const someLi = document.querySelectorAll('.fruit-container li')
+        
+        // for (const li of someLi) {
+        //     console.log(li.innerText);
+        // }
+
+        // const title = document.getElementById('fruits-title');
+        // title.setAttribute('title','tooltip set by JS');
+
+        
+
+        // const title1 = document.getElementById('fruits-title');
+        // title1.setAttribute('title','tooltip set by JS'); //toolip is a attribute
+
+    //    let indexByCount= document.getElementsByClassName('fruit-container') [1];
+    //    console.log(indexByCount);
+
+    const placeUL = document.querySelector('#places-container ul');
+    const li2= document.createElement('li');
+    li2.innerText = 'now create li 2 ';
+   placeUL.appendChild(li2); 
+
+   const placesList= document.getElementById('places-list');
+   const li = document.createElement('li');
+   li.innerText = 'pahartoli bon';
+   placesList.appendChild(li);
+
+  
+
+        
+
+    </script>
+</body>
+</html>
